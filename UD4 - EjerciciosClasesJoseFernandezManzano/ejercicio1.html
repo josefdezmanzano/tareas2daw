@@ -16,12 +16,35 @@
             empleo: "a que se dedicara? ",
             nivel: "como de bueno sera",
             puntuacion: "aqui viene lo bueno",
-            toString: function() {
+            toString: function () {
                 return "Nombre: " + this.nombre + " Apellido: " + this.apellido + " Empleo: " + this.empleo + " Nivel: " + this.nivel + " Puntuacion: " + this.puntuacion;
             }
         }
         alert(Jugadores.toString());
-        let listaJugadores = [];
+        let listaJugadores = [
+            Jugador1 = {
+                nombre: "luke",
+                apellido: "cage",
+                empleo: "super heroe",
+                nivel: 100,
+                puntuacion: 200,
+                toString: function () {
+                    return "Nombre: " + this.nombre + " Apellido: " + this.apellido + " Empleo: " + this.empleo + " Nivel: " + this.nivel + " Puntuacion: " + this.puntuacion;
+                }
+            },
+            Jugador2 = {
+                nombre: "raruno",
+                apellido: "tomelloso",
+                empleo: "mamporrero",
+                nivel: 69,
+                puntuacion: 10,
+                toString: function () {
+                    return "Nombre: " + this.nombre + " Apellido: " + this.apellido + " Empleo: " + this.empleo + " Nivel: " + this.nivel + " Puntuacion: " + this.puntuacion;
+                }
+            }
+        ];
+       delete Jugador2.puntuacion;
+       alert(Jugador2);
     </script>
 
 </body>

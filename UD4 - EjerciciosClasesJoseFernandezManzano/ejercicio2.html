@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var jugador = {
+            nombre: 'Nombre del jugador',
+            apellido: 'Apellido del jugador',
+            empleo: 'Sin empleo',
+            nivel: 0,
+            puntuacion: 'Sin puntuacion',
+            incrementarNivel: function () {
+                nivel++
+            },
+            toString: function () {
+                var cadenaSalida = this.nombre + '' + this.apellido + '. ' + this.empleo + ',  nivel' + this.nivel + '(' + this.puntuacion + ')';
+                return cadenaSalida;
+            }
+        }
+
+        function Jugador(nom, ape, empleo, niv, punt) {
+            this.nombre = nom;
+            apellido = ape;
+            empleo = empleo;
+            nivel = niv;
+            puntuacion = punt;
+            this.incrementarNivel = function () {
+                nivel++
+            }
+            this.toString = function () {
+                var cadenaSalida = this.nombre + '' + this.apellido + '. ' + this.empleo + ',  nivel' + this.nivel + '(' + this.puntuacion + ')';
+                return cadenaSalida;
+            }
+
+        }
+        let j1 = new Jugador("asio", "eulasio", "carretillero", 1, 15);
+        j1.nombre;
+    //j1.apellido;no se pude acceder
+
+    </script>
+</body>
+
+</html>
